@@ -1,0 +1,13 @@
+.DS_Store
+
+bin
+obj
+
+.vscode
+.snapshots
+.alpackages
+
+*.app
+*.alc
+*.alcache
+*.symbols.json
