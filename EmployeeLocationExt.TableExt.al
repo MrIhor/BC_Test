@@ -19,7 +19,8 @@ tableextension 50001 EmployeeLocationExt extends Employee
             trigger OnValidate();
             begin
                 if Rec.Location <> '' then begin
-                    if not RecLocation.Get(Rec.Location) then
+                    RecLocation.SetRange(Name, Rec.Location);
+                    if not RecLocation.FindFirst() then
                         Error('Міста з назвою %1 не існує в таблиці Location', Rec.Location);
                 end;
             end;
