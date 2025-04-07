@@ -31,7 +31,7 @@ table 50102 "Office Allocation Temporary"
 
     keys
     {
-        key(PK; "Office", "Amount")
+        key(PK; "Office")
         {
             Clustered = true;
         }
