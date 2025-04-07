@@ -1,4 +1,4 @@
-pageextension 5200 EmployeeCardExt extends "Employee Card"
+pageextension 50001 EmployeeCardExt extends "Employee Card"
 {
     layout
     {

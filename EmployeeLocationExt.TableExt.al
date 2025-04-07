@@ -1,8 +1,8 @@
-tableextension 5200 EmployeeLocationExt extends Employee
+tableextension 50001 EmployeeLocationExt extends Employee
 {
     fields
     {
-        field(141; "Location"; Text[200])
+        field(50141; "Location"; Text[200])
         {
             Caption = 'Location';
             TableRelation = Location.Name;
@@ -24,16 +24,6 @@ tableextension 5200 EmployeeLocationExt extends Employee
                 end;
             end;
         }
-    }
-
-    keys
-    {
-        // Add changes to keys here
-    }
-
-    fieldgroups
-    {
-        // Add changes to field groups here
     }
 
     var
