@@ -40,14 +40,12 @@ page 50102 "Office Allocation Temporary"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Офіс із таблиці Location';
-                    // Editable = false;
                 }
 
                 field("Amount"; Rec.Amount)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Розрахунок алокаційної бази';
-                    // Editable = false;
                 }
             }
         }
@@ -68,7 +66,6 @@ page 50102 "Office Allocation Temporary"
                 trigger OnAction()
                 var
                     Headcount: Record Headcount;
-                    TempOfficeAllocation: Record "Office Allocation Temporary" temporary;
                     TotalCoreCount: Integer;
                     OfficeCount: Dictionary of [Code[20], Integer];
                     AllocationPercentage: Decimal;
@@ -126,4 +123,5 @@ page 50102 "Office Allocation Temporary"
     var
         PeriodFilter: Date;
         Expense: Decimal;
+        TempOfficeAllocation: Record "Office Allocation Temporary" temporary;
 }
