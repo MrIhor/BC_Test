@@ -2,7 +2,7 @@
     "id": "ad43941a-96e9-4db1-8868-3e9a069bd5d4",
     "name": "ALProject1",
     "publisher": "Ihor Molchan",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "brief": "",
     "description": "",
     "privacyStatement": "",
@@ -16,7 +16,7 @@
     "application": "26.0.30643.32481",
     "idRanges": [
         {
-            "from": 5000,
+            "from": 50000,
             "to": 50149
         }
     ],
