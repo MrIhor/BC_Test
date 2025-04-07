@@ -87,7 +87,7 @@ page 50102 "Office Allocation Temporary"
 
                         repeat
                             if OfficeCount.ContainsKey(Headcount.Office) then
-                                OfficeCount.Set(Headcount.Office, OfficeCount.Get(Headcount.Office))
+                                OfficeCount.Set(Headcount.Office, OfficeCount.Get(Headcount.Office) + Headcount.Count)
                             else
                                 OfficeCount.Add(Headcount.Office, Headcount.Count);
                             TotalCoreCount += Headcount.Count;
